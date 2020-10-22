@@ -2,7 +2,7 @@
 
 11, Aliaksandrava Str., Liasny, Belarus
 
-<southstream@yandex.ru> / +375 (29) 720 51 43 / @southstream1991
+Email: <southstream@yandex.ru> / Cell: +375 (29) 720 51 43 / TG: @southstream1991
 
 ---
 
