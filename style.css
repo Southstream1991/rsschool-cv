@@ -1,3 +1,8 @@
+* {
+  font-family: "Open Sans", Arial, Helvetica, Verdana, sans-serif;
+  color: rgb(61, 61, 61);
+}
+
 body {
   background-color: rgb(233, 233, 233);
   margin: 0;
@@ -11,4 +16,35 @@ body {
   background-color: #fff;
   border-left: 1px solid gray;
   border-right: 1px solid gray;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+h1,
+h2 {
+  font-family: "Open Sans Condensed", Arial, Helvetica, sans-serif;
+  color: #004d99;
+}
+
+#name {
+  text-transform: uppercase;
+}
+
+#avatar {
+  width: 20%;
+  border: 10px solid hsla(214, 100%, 44%, 0.1);
+}
+
+a:hover {
+  color: #004d99;
+}
+
+.cv-section:not(:last-child) {
+  border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+li {
+  list-style-type: square;
 }
