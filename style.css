@@ -3,48 +3,99 @@
   color: rgb(61, 61, 61);
 }
 
+html,
 body {
-  background-color: rgb(233, 233, 233);
+  height: 100%;
+}
+
+body {
+  background-color: lightgray;
   margin: 0;
 }
 
 .wrapper {
   max-width: 1024px;
-  height: auto;
+  height: 100%;
   margin: 0 auto;
-  padding: 20px 40px;
-  background-color: #fff;
-  border-left: 1px solid gray;
-  border-right: 1px solid gray;
+  background-color: white;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.07);
+}
+
+header {
+  text-align: center;
 }
 
 h1 {
-  margin-top: 0;
-}
-
-h1,
-h2 {
-  font-family: "Open Sans Condensed", Arial, Helvetica, sans-serif;
-  color: #004d99;
-}
-
-#name {
+  color: rgb(0, 77, 153);
+  margin: 0;
+  padding: 10px 0 10px 0;
   text-transform: uppercase;
 }
 
-#avatar {
+h2 {
+  color: rgb(0, 77, 153);
+  margin: 0;
+}
+
+.photo-contacts-position-bio {
+  margin: 0 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.photo {
+  display: flex;
+  align-items: flex-end;
   width: 20%;
-  border: 10px solid hsla(214, 100%, 44%, 0.1);
+  background-color: white;
+  border: 10px solid rgba(0, 97, 224, 0.1);
+  overflow: hidden;
 }
 
-a:hover {
-  color: #004d99;
+.photo img {
+  width: 100%;
+  height: auto;
 }
 
-.cv-section:not(:last-child) {
-  border-bottom: 1px solid rgb(221, 221, 221);
+.contacts-position-bio {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: green;
 }
 
-li {
-  list-style-type: square;
+#contacts,
+#position,
+#bio {
+  padding: 0 20px;
+  background-color: #fff;
+}
+
+.cv-sections {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 50px;
+}
+
+.cv-section {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 30px 0 0;
+
+  flex-basis: 250px;
+}
+
+.cv-section-name {
+  font-weight: bold;
+  background-color: rgba(0, 97, 224, 0.1);
+  padding: 0 10px;
+}
+
+.cv-section-text {
+  /* background-color: rgb(109, 105, 105); */
+  padding: 0 10px;
+  border-left: 1px solid rgba(0, 97, 224, 0.1);
+  border-bottom: 1px solid rgba(0, 97, 224, 0.1);
 }
