@@ -1,0 +1,135 @@
+* {
+  font-family: "Open Sans", Arial, Helvetica, Verdana, sans-serif;
+  color: rgb(61, 61, 61);
+}
+
+html,
+body {
+  height: auto;
+}
+
+body {
+  background-color: lightgray;
+  margin: 0;
+}
+
+.wrapper {
+  max-width: 1024px;
+  height: 100%;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.07);
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  color: rgb(0, 77, 153);
+  margin: 0;
+  padding: 10px 0 10px 0;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: rgb(0, 77, 153);
+  margin: 0;
+}
+
+.photo-contacts-position-bio {
+  margin: 0 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.photo {
+  display: flex;
+  align-items: flex-end;
+  width: 20%;
+  background-color: white;
+  border: 10px solid rgba(0, 97, 224, 0.1);
+  overflow: hidden;
+}
+
+.photo img {
+  width: 100%;
+  height: auto;
+}
+
+.contacts-position-bio {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: green;
+}
+
+#contacts,
+#contacts-mobile,
+#position,
+#bio {
+  padding: 0 20px;
+  background-color: #fff;
+}
+
+.cv-sections {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 50px;
+}
+
+.cv-section {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 30px 0 0;
+
+  flex-basis: 250px;
+}
+
+.cv-section-name {
+  font-weight: bold;
+  background-color: rgba(0, 97, 224, 0.1);
+  padding: 0 10px;
+}
+
+.cv-section-text {
+  /* background-color: rgb(109, 105, 105); */
+  padding: 0 10px;
+  border-left: 1px solid rgba(0, 97, 224, 0.1);
+  border-bottom: 1px solid rgba(0, 97, 224, 0.1);
+}
+
+@media (max-width: 660px) {
+  .photo-contacts-position-bio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #contacts {
+    display: none;
+  }
+
+  .photo {
+    width: 50%;
+  }
+
+  .cv-sections {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cv-section {
+    width: 75%;
+    margin: 20px 0;
+    flex-basis: auto;
+  }
+}
+
+@media (min-width: 660px) {
+  #contacts-mobile {
+    display: none;
+  }
+}
